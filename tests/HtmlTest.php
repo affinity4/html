@@ -58,6 +58,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<b class=\"bold-text\">$text</b>", Html::b($text, ['class' => 'bold-text']));
     }
 
+    public function testBdi()
+    {
+        $text = 'BDI';
+        $this->assertEquals("<bdi class=\"bdi-text\">$text</bdi>", Html::bdi($text, ['class' => 'bdi-text']));
+    }
+
     public function testButton()
     {
         $text = 'Button';
