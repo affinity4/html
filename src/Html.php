@@ -176,6 +176,25 @@ class Html
     {
         return (string) new Text\Blockquote($children, $attributes);
     }
+    
+    /**
+     * Cite
+     * 
+     * Creates a cite tag
+     * 
+     * @author Luke Watts <luke@affinity4.ie>
+     * 
+     * @since 0.0.1
+     *
+     * @param string|array|\Affinity4\Html\Tag $children
+     * @param array $attributes
+     * 
+     * @return string
+     */
+    public static function cite($children, array $attributes = []): string
+    {
+        return (string) new Text\Cite($children, $attributes);
+    }
 
     /**
      * Button

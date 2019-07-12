@@ -76,6 +76,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<blockquote class=\"blockquote-text\">$text</blockquote>", Html::blockquote($text, ['class' => 'blockquote-text']));
     }
 
+    public function testCite()
+    {
+        $text = 'Cite';
+        $this->assertEquals("<cite class=\"cite-text\">$text</cite>", Html::cite($text, ['class' => 'cite-text']));
+    }
+
     public function testButton()
     {
         $text = 'Button';
