@@ -82,6 +82,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<cite class=\"cite-text\">$text</cite>", Html::cite($text, ['class' => 'cite-text']));
     }
 
+    public function testCode()
+    {
+        $text = 'Text';
+        $this->assertEquals("<code class=\"code-text\">$text</code>", Html::code($text, ['class' => 'code-text']));
+    }
+
     public function testButton()
     {
         $text = 'Button';

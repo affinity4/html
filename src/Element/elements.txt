@@ -63,7 +63,6 @@ Table\tfoot
 Table\thead
 Table\tr
 
-Text\code
 Text\del
 Text\Details\details
 Text\dfn
