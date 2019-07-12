@@ -159,6 +159,25 @@ class Html
     }
 
     /**
+     * Blockquote
+     * 
+     * Creates a blockquote tag
+     * 
+     * @author Luke Watts <luke@affinity4.ie>
+     * 
+     * @since 0.0.1
+     *
+     * @param string|array|\Affinity4\Html\Tag $children
+     * @param array $attributes
+     * 
+     * @return string
+     */
+    public static function blockquote($children, array $attributes = []): string
+    {
+        return (string) new Text\Blockquote($children, $attributes);
+    }
+
+    /**
      * Button
      * 
      * Creates a button tag

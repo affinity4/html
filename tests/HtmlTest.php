@@ -70,6 +70,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<bdo class=\"bdo-text\">$text</bdo>", Html::bdo($text, ['class' => 'bdo-text']));
     }
 
+    public function testBlockquote()
+    {
+        $text = 'Blockquote';
+        $this->assertEquals("<blockquote class=\"blockquote-text\">$text</blockquote>", Html::blockquote($text, ['class' => 'blockquote-text']));
+    }
+
     public function testButton()
     {
         $text = 'Button';
