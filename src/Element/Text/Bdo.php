@@ -4,9 +4,9 @@ namespace Affinity4\Html\Element\Text;
 use Affinity4\Html\Tag;
 
 /**
- * Bdi Class
+ * Bdo Class
  * 
- * Creates a bdi tag
+ * Creates a bdo tag
  * 
  * @author Luke Watts <luke@affinity4.ie>
  * 
@@ -14,12 +14,12 @@ use Affinity4\Html\Tag;
  * 
  * @package Affinity4\Html
  */
-class Bdi extends Tag
+class Bdo extends Tag
 {
     /**
      * Constructor
      * 
-     * Creates a bdi tag
+     * Creates a bdo tag
      * 
      * @author Luke Watts <luke@affinity4.ie>
      * 
@@ -32,6 +32,6 @@ class Bdi extends Tag
      */
     public function __construct($children = null, array $attributes = [])
     {
-        parent::__construct('bdi', $children, $attributes);
+        parent::__construct('bdo', $children, $attributes);
     }
 }
