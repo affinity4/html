@@ -46,6 +46,12 @@ class HtmlTest extends TestCase
         );
     }
 
+    public function testAddress()
+    {
+        $text = 'Address';
+        $this->assertEquals("<address class=\"address\">$text</address>", Html::address($text, ['class' => 'address']));
+    }
+
     public function testB()
     {
         $text = 'Bold';
