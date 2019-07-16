@@ -100,6 +100,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<del class=\"del-text\">$text</del>", Html::del($text, ['class' => 'del-text']));
     }
 
+    public function testDfn()
+    {
+        $text = 'Text';
+        $this->assertEquals("<dfn class=\"dfn-text\">$text</dfn>", Html::dfn($text, ['class' => 'dfn-text']));
+    }
+
     public function testDoctype()
     {
         $this->assertEquals("<!doctype html>", Html::doctype());
