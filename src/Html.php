@@ -176,7 +176,26 @@ class Html
     {
         return (string) new Text\Blockquote($children, $attributes);
     }
-    
+
+    /**
+     * Button
+     * 
+     * Creates a button tag
+     * 
+     * @author Luke Watts <luke@affinity4.ie>
+     * 
+     * @since 0.0.1
+     *
+     * @param string|array|\Affinity4\Html\Tag $children
+     * @param array $attributes
+     * 
+     * @return string
+     */
+    public static function button($children, array $attributes = []): string
+    {
+        return (string) new Form\Button($children, $attributes);
+    }
+
     /**
      * Cite
      * 
@@ -216,9 +235,9 @@ class Html
     }
 
     /**
-     * Button
+     * Del
      * 
-     * Creates a button tag
+     * Creates a del tag
      * 
      * @author Luke Watts <luke@affinity4.ie>
      * 
@@ -229,9 +248,9 @@ class Html
      * 
      * @return string
      */
-    public static function button($children, array $attributes = []): string
+    public static function del($children, array $attributes = []): string
     {
-        return (string) new Form\Button($children, $attributes);
+        return (string) new Text\Del($children, $attributes);
     }
 
     /**

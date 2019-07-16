@@ -76,6 +76,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<blockquote class=\"blockquote-text\">$text</blockquote>", Html::blockquote($text, ['class' => 'blockquote-text']));
     }
 
+    public function testButton()
+    {
+        $text = 'Button';
+        $this->assertEquals("<button class=\"btn\">$text</button>", Html::button($text, ['class' => 'btn']));
+    }
+
     public function testCite()
     {
         $text = 'Cite';
@@ -88,10 +94,10 @@ class HtmlTest extends TestCase
         $this->assertEquals("<code class=\"code-text\">$text</code>", Html::code($text, ['class' => 'code-text']));
     }
 
-    public function testButton()
+    public function testDel()
     {
-        $text = 'Button';
-        $this->assertEquals("<button class=\"btn\">$text</button>", Html::button($text, ['class' => 'btn']));
+        $text = 'Text';
+        $this->assertEquals("<del class=\"del-text\">$text</del>", Html::del($text, ['class' => 'del-text']));
     }
 
     public function testDoctype()

@@ -63,7 +63,6 @@ Table\tfoot
 Table\thead
 Table\tr
 
-Text\del
 Text\Details\details
 Text\dfn
 Text\em
