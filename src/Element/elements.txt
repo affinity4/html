@@ -63,7 +63,6 @@ Table\tfoot
 Table\thead
 Table\tr
 
-Text\em
 Text\h1
 Text\h2
 Text\h3

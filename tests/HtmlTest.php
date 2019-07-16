@@ -106,6 +106,12 @@ class HtmlTest extends TestCase
         $this->assertEquals("<dfn class=\"dfn-text\">$text</dfn>", Html::dfn($text, ['class' => 'dfn-text']));
     }
 
+    public function testEm()
+    {
+        $text = 'Text';
+        $this->assertEquals("<em class=\"em-text\">$text</em>", Html::em($text, ['class' => 'em-text']));
+    }
+
     public function testDoctype()
     {
         $this->assertEquals("<!doctype html>", Html::doctype());
